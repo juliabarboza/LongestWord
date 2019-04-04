@@ -7,7 +7,7 @@ class Main {
   
     int biggestword = 0;
     String theword = "";
-   String[] splitword = sen.replaceAll("[^a-zA-Z ]", "").split(" ");
+   String[] splitword = sen.replaceAll("[^a-zA-Z1-9 ]", "").split(" ");
     for (int i = 0; i < splitword.length; i++)
     {
         if(biggestword < splitword[i].length())
